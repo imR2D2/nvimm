@@ -26,8 +26,8 @@ https://github.com/junegunn/vim-plug
 -- Ejecutas como administrador la terminal y colocas el comando seleccionado
 
 - Archivo de vim-plug
--- Entras a tu explorador de archivos y en la pestaña "Vistas" habilitas "Seccion de archivo y items ocultos"
--- Entras a la carpeta c:\users\tuusuario\appdata\local\nvim-data
+-- Entras a tu explorador de archivos y en la pestaña "Vistas" habilitas "Seccion de archivo e items ocultos"
+-- Entras a la carpeta c:\users\tuusuario\appdata\local\nvim
 -- Creamos una carpeta nueva con el nombre "nvim"
 -- Creamos una carpeta llamada "plugged"
 -- Creamos un archivo "init.vim"
