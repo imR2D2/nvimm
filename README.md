@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/102141714/236871303-3d026987-dacc-4374-b085-e88ec1895ef6.png)
+
+
 #PASOS PARA INSTALAR NEOVIM
 
 - TEMA
