@@ -8,6 +8,8 @@ Plug 'ghifarit53/tokyonight-vim'		"tema2
 Plug 'morhetz/gruvbox'                          "tema3
 Plug 'hzchirs/vim-material'
 
+
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 "Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -58,8 +60,8 @@ set t_co=256
 "CONFIGURACIONES BASICAS(Temas)
 set termguicolors 			"activa el true color en la terminal
 "let g:gruvbox_contrast_dark= "hard"
-"colorscheme gruvbox
-colorscheme tokyonight
+colorscheme gruvbox
+"colorscheme tokyonight
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 "MAPEOS LET
@@ -70,9 +72,9 @@ let g:user_emmet_leader_key=',' 				"mapeando la tecla lider por una coma, con e
 let g:airline#extensions#tabline#enabled = 1			"muestra la linea de pestaña en la que estamos buffer
 let g:airline#extensions#tabline#formatter = 'unique_tail'	"muestra solo el nombre del archivo que estamos modificando
 let g:airline#extensions#tabline#left_sep = '|'
-"let g:airline_theme='wombat' "el tema de onedark airlineyy
+let g:airline_theme='wombat' "el tema de onedark airlineyy
 "let g:airline_theme='atomic' "el tema de onedark airlineyy con tokyonight
-let g:airline_theme='atomic' "el tema de onedark airlineyy
+"let g:airline_theme='atomic' "el tema de onedark airlineyy
     if !exists('g:airline_symbols')
         let g:airline_symbols = {}
     endif
@@ -131,3 +133,6 @@ let g:rainbow_active = 1
 
 "ENTRAR AL MODO INSERTAR DE MODO CORTADO
 :imap ii <Esc>
+
+noremap mm :w<CR>
+nnoremap ff :Prettier<CR>
